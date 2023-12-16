@@ -1,5 +1,6 @@
 body {
     background-color: rgb(232, 223, 202);
+    font-family: 'Arial (sans-serif)';
 }
 
 .center-contents {
@@ -41,7 +42,10 @@ body {
 .submit-button {
     border-radius: 25px;
     border: none;
-    background-color: rgb(56, 56, 255);
+    background-color: rgb(14, 54, 87);
+    color: white;
+    font-family: 'Arial (sans-serif)';
+    font-size: medium;
     transition: 0.3s;
     height: 2rem;
     width: 5rem;
