@@ -1,0 +1,504 @@
+{
+    "questions": [
+        {
+            "question": "What is the chemical symbol for water?",
+            "answers": [
+                "O",
+                "H2O",
+                "CO2",
+                "N2"
+            ],
+            "correctAnswer": "H2O"
+        },
+        {
+            "question": "What is the value of π (pi) to two decimal places?",
+            "answers": [
+                "3.14",
+                "2.71",
+                "1.62",
+                "4.20"
+            ],
+            "correctAnswer": "3.14"
+        },
+        {
+            "question": "Who was the first President of the United States?",
+            "answers": [
+                "Thomas Jefferson",
+                "Abraham Lincoln",
+                "George Washington",
+                "John Adams"
+            ],
+            "correctAnswer": "George Washington"
+        },
+        {
+            "question": "Which continent is known as the 'Land of the Rising Sun'?",
+            "answers": [
+                "Europe",
+                "Asia",
+                "Africa",
+                "Australia"
+            ],
+            "correctAnswer": "Asia"
+        },
+        {
+            "question": "In what year did the Apollo 11 mission land the first humans on the Moon?",
+            "answers": [
+                "1969",
+                "1975",
+                "1982",
+                "1957"
+            ],
+            "correctAnswer": "1969"
+        },
+        {
+            "question": "What is the powerhouse of the cell?",
+            "answers": [
+                "Nucleus",
+                "Mitochondria",
+                "Ribosome",
+                "Endoplasmic reticulum"
+            ],
+            "correctAnswer": "Mitochondria"
+        },
+        {
+            "question": "Which fundamental force is responsible for holding electrons in orbit around the nucleus?",
+            "answers": [
+                "Gravity",
+                "Electromagnetic",
+                "Weak nuclear",
+                "Strong nuclear"
+            ],
+            "correctAnswer": "Electromagnetic"
+        },
+        {
+            "question": "Who wrote the play 'Romeo and Juliet'?",
+            "answers": [
+                "Charles Dickens",
+                "William Shakespeare",
+                "Jane Austen",
+                "F. Scott Fitzgerald"
+            ],
+            "correctAnswer": "William Shakespeare"
+        },
+        {
+            "question": "What is the sum of the angles in a triangle?",
+            "answers": [
+                "90 degrees",
+                "120 degrees",
+                "180 degrees",
+                "360 degrees"
+            ],
+            "correctAnswer": "180 degrees"
+        },
+        {
+            "question": "Which ancient civilization built the pyramids at Giza?",
+            "answers": [
+                "Roman",
+                "Greek",
+                "Egyptian",
+                "Mesopotamian"
+            ],
+            "correctAnswer": "Egyptian"
+        },
+        {
+            "question": "What gas do plants absorb from the atmosphere and release oxygen?",
+            "answers": [
+                "Nitrogen",
+                "Carbon dioxide",
+                "Oxygen",
+                "Hydrogen"
+            ],
+            "correctAnswer": "Carbon dioxide"
+        },
+        {
+            "question": "Who is known as the 'Father of Computing'?",
+            "answers": [
+                "Alan Turing",
+                "Charles Babbage",
+                "Ada Lovelace",
+                "Bill Gates"
+            ],
+            "correctAnswer": "Charles Babbage"
+        },
+        {
+            "question": "Which planet is known as the 'Red Planet'?",
+            "answers": [
+                "Mars",
+                "Venus",
+                "Jupiter",
+                "Saturn"
+            ],
+            "correctAnswer": "Mars"
+        },
+        {
+            "question": "In which year did World War II end?",
+            "answers": [
+                "1943",
+                "1945",
+                "1947",
+                "1950"
+            ],
+            "correctAnswer": "1945"
+        },
+        {
+            "question": "What is the largest mammal in the world?",
+            "answers": [
+                "Elephant",
+                "Blue whale",
+                "Giraffe",
+                "Hippopotamus"
+            ],
+            "correctAnswer": "Blue whale"
+        },
+        {
+            "question": "What is the capital of Japan?",
+            "answers": [
+                "Seoul",
+                "Beijing",
+                "Tokyo",
+                "Bangkok"
+            ],
+            "correctAnswer": "Tokyo"
+        },
+        {
+            "question": "Who wrote 'To Kill a Mockingbird'?",
+            "answers": [
+                "Harper Lee",
+                "J.K. Rowling",
+                "George Orwell",
+                "Ernest Hemingway"
+            ],
+            "correctAnswer": "Harper Lee"
+        },
+        {
+            "question": "What is the chemical symbol for gold?",
+            "answers": [
+                "Au",
+                "Ag",
+                "Fe",
+                "Cu"
+            ],
+            "correctAnswer": "Au"
+        },
+        {
+            "question": "Who painted the Mona Lisa?",
+            "answers": [
+                "Vincent van Gogh",
+                "Leonardo da Vinci",
+                "Pablo Picasso",
+                "Michelangelo"
+            ],
+            "correctAnswer": "Leonardo da Vinci"
+        },
+        {
+            "question": "What is the largest ocean on Earth?",
+            "answers": [
+                "Atlantic Ocean",
+                "Indian Ocean",
+                "Southern Ocean",
+                "Pacific Ocean"
+            ],
+            "correctAnswer": "Pacific Ocean"
+        },
+        {
+            "question": "Who developed the theory of relativity?",
+            "answers": [
+                "Isaac Newton",
+                "Albert Einstein",
+                "Galileo Galilei",
+                "Stephen Hawking"
+            ],
+            "correctAnswer": "Albert Einstein"
+        },
+        {
+            "question": "In which year did the Titanic sink?",
+            "answers": [
+                "1912",
+                "1915",
+                "1917",
+                "1920"
+            ],
+            "correctAnswer": "1912"
+        },
+        {
+            "question": "What is the capital of Australia?",
+            "answers": [
+                "Wellington",
+                "Canberra",
+                "Sydney",
+                "Melbourne"
+            ],
+            "correctAnswer": "Canberra"
+        },
+        {
+            "question": "Who is the author of '1984'?",
+            "answers": [
+                "Aldous Huxley",
+                "George Orwell",
+                "Ray Bradbury",
+                "Margaret Atwood"
+            ],
+            "correctAnswer": "George Orwell"
+        },
+        {
+            "question": "What is the currency of Brazil?",
+            "answers": [
+                "Peso",
+                "Real",
+                "Ruble",
+                "Dinar"
+            ],
+            "correctAnswer": "Real"
+        },
+        {
+            "question": "Which gas makes up the majority of Earth's atmosphere?",
+            "answers": [
+                "Oxygen",
+                "Carbon dioxide",
+                "Nitrogen",
+                "Hydrogen"
+            ],
+            "correctAnswer": "Nitrogen"
+        },
+        {
+            "question": "Who wrote 'Pride and Prejudice'?",
+            "answers": [
+                "Jane Austen",
+                "Charlotte Brontë",
+                "Emily Dickinson",
+                "Charles Dickens"
+            ],
+            "correctAnswer": "Jane Austen"
+        },
+        {
+            "question": "What is the smallest prime number?",
+            "answers": [
+                "1",
+                "2",
+                "3",
+                "5"
+            ],
+            "correctAnswer": "2"
+        },
+        {
+            "question": "Which human organ is capable of regenerating tissue?",
+            "answers": [
+                "Heart",
+                "Liver",
+                "Lung",
+                "Kidney"
+            ],
+            "correctAnswer": "Liver"
+        },
+        {
+            "question": "Who is known as the 'Queen of Pop'?",
+            "answers": [
+                "Beyoncé",
+                "Madonna",
+                "Taylor Swift",
+                "Rihanna"
+            ],
+            "correctAnswer": "Madonna"
+        },
+        {
+            "question": "What is the capital of South Africa?",
+            "answers": [
+                "Lagos",
+                "Cairo",
+                "Johannesburg",
+                "Pretoria"
+            ],
+            "correctAnswer": "Pretoria"
+        },
+        {
+            "question": "Which planet is known as the 'Morning Star'?",
+            "answers": [
+                "Mars",
+                "Venus",
+                "Mercury",
+                "Saturn"
+            ],
+            "correctAnswer": "Venus"
+        },
+        {
+            "question": "Who painted 'Starry Night'?",
+            "answers": [
+                "Vincent van Gogh",
+                "Leonardo da Vinci",
+                "Claude Monet",
+                "Pablo Picasso"
+            ],
+            "correctAnswer": "Vincent van Gogh"
+        },
+        {
+            "question": "What is the largest desert on Earth?",
+            "answers": [
+                "Sahara Desert",
+                "Arctic Desert",
+                "Gobi Desert",
+                "Antarctica"
+            ],
+            "correctAnswer": "Antarctica"
+        },
+        {
+            "question": "Who is credited with discovering penicillin?",
+            "answers": [
+                "Marie Curie",
+                "Alexander Fleming",
+                "Louis Pasteur",
+                "Jonas Salk"
+            ],
+            "correctAnswer": "Alexander Fleming"
+        },
+        {
+            "question": "What is the square root of 144?",
+            "answers": [
+                "10",
+                "12",
+                "14",
+                "16"
+            ],
+            "correctAnswer": "12"
+        },
+        {
+            "question": "In Greek mythology, who is the god of the sea?",
+            "answers": [
+                "Zeus",
+                "Poseidon",
+                "Hades",
+                "Apollo"
+            ],
+            "correctAnswer": "Poseidon"
+        },
+        {
+            "question": "Which scientist formulated the laws of motion and universal gravitation?",
+            "answers": [
+                "Galileo Galilei",
+                "Isaac Newton",
+                "Johannes Kepler",
+                "Albert Einstein"
+            ],
+            "correctAnswer": "Isaac Newton"
+        },
+        {
+            "question": "What is the largest mammal on land?",
+            "answers": [
+                "Elephant",
+                "Giraffe",
+                "Hippopotamus",
+                "Rhinoceros"
+            ],
+            "correctAnswer": "Elephant"
+        },
+        {
+            "question": "Who wrote 'The Great Gatsby'?",
+            "answers": [
+                "F. Scott Fitzgerald",
+                "Earnest Hemingway",
+                "J.D. Salinger",
+                "Harper Lee"
+            ],
+            "correctAnswer": "F. Scott Fitzgerald"
+        },
+        {
+            "question": "What is the largest planet in our solar system?",
+            "answers": [
+                "Earth",
+                "Jupiter",
+                "Mars",
+                "Saturn"
+            ],
+            "correctAnswer": "Jupiter"
+        },
+        {
+            "question": "Who is the author of 'The Catcher in the Rye'?",
+            "answers": [
+                "J.D. Salinger",
+                "Mark Twain",
+                "F. Scott Fitzgerald",
+                "George Orwell"
+            ],
+            "correctAnswer": "J.D. Salinger"
+        },
+        {
+            "question": "In which year did the Berlin Wall fall?",
+            "answers": [
+                "1985",
+                "1989",
+                "1991",
+                "1995"
+            ],
+            "correctAnswer": "1989"
+        },
+        {
+            "question": "What is the currency of Japan?",
+            "answers": [
+                "Won",
+                "Yuan",
+                "Yen",
+                "Ringgit"
+            ],
+            "correctAnswer": "Yen"
+        },
+        {
+            "question": "Who developed the theory of natural selection?",
+            "answers": [
+                "Gregor Mendel",
+                "Charles Darwin",
+                "Alfred Russel Wallace",
+                "Thomas Malthus"
+            ],
+            "correctAnswer": "Charles Darwin"
+        },
+        {
+            "question": "Which element is commonly used in batteries?",
+            "answers": [
+                "Lithium",
+                "Sodium",
+                "Potassium",
+                "Calcium"
+            ],
+            "correctAnswer": "Lithium"
+        },
+        {
+            "question": "What is the speed of light in a vacuum?",
+            "answers": [
+                "300,000 km/s",
+                "150,000 km/s",
+                "450,000 km/s",
+                "600,000 km/s"
+            ],
+            "correctAnswer": "300,000 km/s"
+        },
+        {
+            "question": "Which planet is known as the 'Red Planet'?",
+            "answers": [
+                "Mars",
+                "Venus",
+                "Jupiter",
+                "Saturn"
+            ],
+            "correctAnswer": "Mars"
+        },
+        {
+            "question": "Who was the first woman to win a Nobel Prize?",
+            "answers": [
+                "Marie Curie",
+                "Rosalind Franklin",
+                "Dorothy Crowfoot Hodgkin",
+                "Barbara McClintock"
+            ],
+            "correctAnswer": "Marie Curie"
+        },
+        {
+            "question": "What is the capital of Canada?",
+            "answers": [
+                "Ottawa",
+                "Toronto",
+                "Vancouver",
+                "Montreal"
+            ],
+            "correctAnswer": "Ottawa"
+        }
+    ]
+}

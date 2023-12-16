@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Online Quiz</title>
+</head>
+
+<body>
+    <div class="center-contents">
+        <h1>
+            Best quiz eveeer!
+        </h1>
+    </div>
+    <div class="quiz-box">
+
+        <div class="center-contents question">
+            <h2 id="question-text">Default question?</h2>
+        </div>
+
+        <div class="answers">
+            <div class="answer-line">
+                <input id="checkbox1" class="checkbox" type="checkbox" onclick="clearOtherCheckboxes(1)">
+                <h3 id="answer1" class="answer-label">Default answer</h3>
+            </div>
+            <div class="answer-line">
+                <input id="checkbox2" class="checkbox" type="checkbox" onclick="clearOtherCheckboxes(2)">
+                <h3 id="answer2" class="answer-label">Default answer</h3>
+            </div>
+            <div class="answer-line">
+                <input id="checkbox3" class="checkbox" type="checkbox" onclick="clearOtherCheckboxes(3)">
+                <h3 id="answer3" class="answer-label">Default answer</h3>
+            </div>
+            <div class="answer-line">
+                <input id="checkbox4" class="checkbox" type="checkbox" onclick="clearOtherCheckboxes(4)">
+                <h3 id="answer4" class="answer-label">Default answer</h3>
+            </div>
+        </div>
+
+        <div class="center-contents">
+            <input class="submit-button" type="submit" onclick="submitAnswer();" />
+        </div>
+    </div>
+
+    <div class="center-contents">
+        <section class="modal hidden">
+
+            <div class="center-contents">
+                <h2 id="score-message">Default score</h2>
+            </div>
+
+            <div class="center-contents">
+                <h4>Hold on! The next quiz is about to begin!</h4>
+            </div>
+
+        </section>
+
+        <div class="overlay hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
