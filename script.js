@@ -184,9 +184,22 @@ async function displayScore() {
     await sleep(2500);
 }
 
+function checkIfUserSelectedAnswer() {
+    for (let index = 0; index < 4; index++)
+        if (checkboxes[index].checked)
+            return true;
+
+    return false;
+}
+
 populateQuestionsAndAswers().then(() => main());
 
 async function submitAnswer() {
+    if (!checkIfUserSelectedAnswer())
+    {
+        window.alert("Please choose an answer!");
+        return;
+    }
     evaluateAnswer(currentQuestion);
     currentQuestion = showNextQuestion();
 
