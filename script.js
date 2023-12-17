@@ -2,6 +2,8 @@ const questions = [];
 const answers = [];
 const correctAnswers = [];
 
+const QUIZ_SIZE = 10;
+
 async function readTextFile(file) {
 
     return fetch(file)
@@ -41,7 +43,7 @@ function setupQuiz() {
     modal.classList.add("hidden");
     overlay.classList.add("hidden");
 
-    quiz = new Quiz(questionsPool, 10);
+    quiz = new Quiz(questionsPool, QUIZ_SIZE); // Creates a new quiz having a given number of questions.
 
     questionText = document.getElementById("question-text");
     scoreMessage = document.getElementById("score-message");

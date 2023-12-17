@@ -49,6 +49,10 @@ class QuestionsPool {
     getRandomQuestions(numberOfQuestions) {
         this.randomQuestionIndices = shuffle(this.randomQuestionIndices);
 
+        // If a number of questions greater than the number of available ones is required, return all the questions available.
+        if (numberOfQuestions > this.allQuestions.length)
+            numberOfQuestions = this.allQuestions.length;
+
         const randomQuestions = [];
         for (let index = 0; index < numberOfQuestions; index++)
             randomQuestions.push(this.allQuestions[this.randomQuestionIndices[index]]);
