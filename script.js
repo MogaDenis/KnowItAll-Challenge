@@ -90,17 +90,17 @@ class QuestionsPool {
 
 class Quiz {
     constructor(questionsPool, numberOfQuestions) {
-        this.Questions = questionsPool.getRandomQuestions(numberOfQuestions);
+        this.questions = questionsPool.getRandomQuestions(numberOfQuestions);
 
         this.currentQuestionIndex = 0;
         this.numberOfQuestions = numberOfQuestions;
     }
 
     getNext() {
-        if (this.currentQuestionIndex >= this.Questions.length)
+        if (this.currentQuestionIndex >= this.questions.length)
             return null;
 
-        return this.Questions[this.currentQuestionIndex++];
+        return this.questions[this.currentQuestionIndex++];
     }
 }
 
@@ -113,6 +113,7 @@ function setupQuiz() {
     modal = document.querySelector(".modal");
     overlay = document.querySelector(".overlay");
 
+    // Hide the modal with the score.
     modal.classList.add("hidden");
     overlay.classList.add("hidden");
 
@@ -123,7 +124,7 @@ function setupQuiz() {
 
     answerLabels = [];
     checkboxes = [];
-    for (let index = 1; index <= 4; index++) {
+    for (let index = 1; index <= 4; index++) { // 4 answers and 4 checkboxes.
         answerLabels.push(document.getElementById("answer" + index));
         checkboxes.push(document.getElementById("checkbox" + index));
     }
@@ -141,7 +142,7 @@ function showNextQuestion() {
 
     const questionAnswers = nextQuestion.getAnswers();
 
-    for (let index = 0; index < 4; index++) {
+    for (let index = 0; index < answerLabels.length; index++) {
         answerLabels[index].innerText = questionAnswers[index];
         checkboxes[index].checked = false;
     }
@@ -149,8 +150,9 @@ function showNextQuestion() {
     return nextQuestion;
 }
 
+// When a checkbox is clicked, this clears the other checkboxes. (only one answer can be selected)
 function clearOtherCheckboxes(checkboxIndexToSkip) {
-    for (let index = 0; index < 4; index++) {
+    for (let index = 0; index < checkboxes.length; index++) {
         if (index != checkboxIndexToSkip - 1)
             checkboxes[index].checked = false;
     }
@@ -160,7 +162,7 @@ function evaluateAnswer(currentQuestion) {
     if (currentQuestion == null)
         return;
 
-    for (let index = 0; index < 4; index++) {
+    for (let index = 0; index < checkboxes.length; index++) {
         if (checkboxes[index].checked && currentQuestion.isAnswerCorrect(currentQuestion.getAnswers()[index])) {
             score++;
             break;
@@ -168,18 +170,22 @@ function evaluateAnswer(currentQuestion) {
     }
 }
 
+// Async function, must be used with 'await', pauses the execution for a given time in miliseconds.
 const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 
 async function displayScore() {
     scoreMessage.innerText = "Final score: " + score + "/" + quiz.numberOfQuestions;
 
     await sleep(100);
+
+    // Show the modal with the score.
     modal.classList.remove("hidden");
     overlay.classList.remove("hidden");
+
     await sleep(2500);
 }
 
-function checkIfUserSelectedAnswer() {
+function checkIfUserSelectedAnAnswer() {
     for (let index = 0; index < 4; index++)
         if (checkboxes[index].checked)
             return true;
@@ -187,27 +193,33 @@ function checkIfUserSelectedAnswer() {
     return false;
 }
 
-populateQuestionsAndAswers().then(() => main());
-
+// This function is called everytime the user submits an answer.
 async function submitAnswer() {
-    if (!checkIfUserSelectedAnswer())
+    if (!checkIfUserSelectedAnAnswer())
     {
         window.alert("Please choose an answer!");
         return;
     }
+
     evaluateAnswer(currentQuestion);
     currentQuestion = showNextQuestion();
 
     if (currentQuestion == null) { // Quiz Over. 
         await displayScore();
 
-        setupQuiz(); // Start a new Quiz.
-        currentQuestion = showNextQuestion();
+        newQuiz(); // Start a new Quiz.
     }
+}
+
+function newQuiz() {
+    setupQuiz();
+    currentQuestion = showNextQuestion();
 }
 
 function main() {
     questionsPool = new QuestionsPool(questions, answers, correctAnswers);
-    setupQuiz();
-    currentQuestion = showNextQuestion();
+    newQuiz();
 }
+
+// Read the data from the .json file, then start the quiz.
+populateQuestionsAndAswers().then(() => main());

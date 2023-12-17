@@ -33,6 +33,7 @@ body {
 
 .checkbox {
     margin-right: 0.5%;
+    transform: scale(1.5);
 }
 
 .answer-label {
@@ -101,17 +102,6 @@ button {
     border: none;
     font-weight: 600;
 }
-
-/* .btn {
-    display: inline-block;
-    padding: 0.8rem 1.4rem;
-    font-weight: 700;
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 1em;
-} */
 
 .overlay {
     position: fixed;
