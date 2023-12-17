@@ -27,11 +27,6 @@ async function populateQuestionsAndAswers() {
     }
 }
 
-// Returns a random integer between lowerBound and upperBound(inclusive).
-function getRandomInt(lowerBound, upperBound) {
-    return lowerBound + Math.floor(Math.random() * (upperBound + 1));
-}
-
 // Randomly shuffles the given array.
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {

@@ -42,7 +42,7 @@ body {
 .submit-button {
     border-radius: 25px;
     border: none;
-    background-color: rgb(14, 54, 87);
+    background-color: black;
     color: white;
     font-family: 'Arial (sans-serif)';
     font-size: medium;
