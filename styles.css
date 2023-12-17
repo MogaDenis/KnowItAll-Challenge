@@ -1,6 +1,11 @@
 body {
     background-color: rgb(232, 223, 202);
     font-family: 'Arial (sans-serif)';
+    padding-top: 3%;
+}
+
+.title {
+    padding-bottom: 3%;
 }
 
 .center-contents {
@@ -57,7 +62,7 @@ body {
 
 .submit-button:hover {
     cursor: pointer;
-    background-color: rgb(56, 56, 100);
+    background-color: gray;
     transition: 0.3s;
 }
 
