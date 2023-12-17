@@ -1,11 +1,11 @@
 body {
     background-color: rgb(232, 223, 202);
     font-family: 'Arial (sans-serif)';
-    padding-top: 3%;
+    margin-top: 3%;
 }
 
 .title {
-    padding-bottom: 3%;
+    margin-bottom: 3%;
 }
 
 .center-contents {
@@ -28,7 +28,7 @@ body {
 .answers {
     display: flex;
     flex-direction: column;
-    padding: 3%;
+    margin: 3%;
 }
 
 .checkbox {
@@ -37,7 +37,7 @@ body {
 }
 
 .answer-label {
-    margin: 0.5%;
+    margin: 0.5%;   
 }
 
 .answer-line {
@@ -68,7 +68,6 @@ body {
     transition: 0.3s;
 }
 
-
 .modal {
     display: flex;
     flex-direction: column;
@@ -89,12 +88,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.modal p {
-    font-size: 0.9rem;
-    color: #777;
-    margin: 0.4rem 0 0.2rem;
 }
 
 button {
