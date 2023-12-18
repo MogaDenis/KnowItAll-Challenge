@@ -68,6 +68,8 @@ class Quiz {
 
         this.currentQuestionIndex = 0;
         this.numberOfQuestions = numberOfQuestions;
+
+        this.score = 0;
     }
 
     getNext() {
@@ -76,4 +78,12 @@ class Quiz {
 
         return this.questions[this.currentQuestionIndex++];
     }
+
+    getScore() {
+        return this.score;
+    }
+
+    setScore(newScore) {
+        this.score = newScore;
+    } 
 }

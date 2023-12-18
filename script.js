@@ -30,7 +30,7 @@ async function populateQuestionsAndAswers() {
 }
 
 
-let quiz, questionText, answerLabels, checkboxes, score, scoreMessage;
+let quiz, questionText, answerLabels, checkboxes, scoreMessage;
 let modal, overlay;
 let questionsPool;
 let currentQuestion;
@@ -90,7 +90,7 @@ function evaluateAnswer(currentQuestion) {
 
     for (let index = 0; index < checkboxes.length; index++) {
         if (checkboxes[index].checked && currentQuestion.isAnswerCorrect(currentQuestion.getAnswers()[index])) {
-            score++;
+            quiz.setScore(quiz.getScore() + 1);
             break;
         }
     }
@@ -100,7 +100,7 @@ function evaluateAnswer(currentQuestion) {
 const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 
 async function displayScore() {
-    scoreMessage.innerText = "Final score: " + score + "/" + quiz.numberOfQuestions;
+    scoreMessage.innerText = "Final score: " + quiz.getScore() + "/" + quiz.numberOfQuestions;
 
     await sleep(100);
 
