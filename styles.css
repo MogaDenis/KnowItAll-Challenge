@@ -90,12 +90,6 @@ body {
     justify-content: space-between;
 }
 
-button {
-    cursor: pointer;
-    border: none;
-    font-weight: 600;
-}
-
 .overlay {
     position: fixed;
     backdrop-filter: blur(3px);
